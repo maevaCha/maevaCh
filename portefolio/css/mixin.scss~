@@ -4,6 +4,8 @@
 ================================================== */
 $color-white:#fff;
 $color-blue:#22afcd;
+$color-brown: #681313;
+$color-grey: #f3f3f3;
 
 
 
@@ -11,7 +13,7 @@ $color-blue:#22afcd;
     round button 
 ================================================== */
 
-@raduis-button($width, $height) {
+@mixin raduis-button($width, $height) {
     $width    : false !default;
     $height  : false !default;
 	@if $width {
@@ -68,15 +70,5 @@ $color-blue:#22afcd;
         z-index : unquote($z-index);
     }
 }
-@mixin arrow-after($border-width) {
-   	$border-width : false !default;
-	$border-color : false !default;
-    position : absolute;
-    content:"";
-	
-    @if $border-width {
-        border-width : unquote($width);
-    }
 
-}
 

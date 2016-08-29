@@ -4,7 +4,5 @@
 /* ==================================================
     round button 
 ================================================== */
-@raduis-button ($width, $height) {
-  border-radius: 50%; }
 
 /*# sourceMappingURL=mixin.css.map */

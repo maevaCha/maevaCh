@@ -39,6 +39,8 @@
 		<div class="wrapper-menu">
 			<div class="round-button menu">
 				<span class="menu-icon sprite"></span>
+				<span class="arrow menu"></span>
+				<span class="round-circle"></span>
 	
 			</div>
 		</div>

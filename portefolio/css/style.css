@@ -7,51 +7,9 @@
 /* ==================================================
     round button 
 ================================================== */
-@raduis-button ($width, $height) {
-  border-radius: 50%; }
 /* ==================================================
-    Page d'acceuil    
+    animation button menu-move
 ================================================== */
-body {
-  height: 1500px; }
-  body .name {
-    color: red;
-    position: fixed;
-    top: 20px;
-    left: 20px; }
-  body .menu-emplacement {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 400px;
-    height: 80px; }
-    body .menu-emplacement:hover {
-      cursor: pointer; }
-    body .menu-emplacement .menu-icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 10;
-      width: 80px;
-      height: 80px;
-      display: block;
-      background: url("../img/icon-vache-menu.png");
-      background-repeat: no-repeat; }
-    body .menu-emplacement .arrow.menu {
-      position: absolute;
-      top: 18px;
-      right: 10px;
-      z-index: 1;
-      content: '';
-      width: 0;
-      height: 0;
-      border-left: 34.6px solid #22afcd;
-      border-bottom: 20px solid transparent;
-      border-top: 20px solid transparent; }
-    body .menu-emplacement:hover .menu-icon {
-      background-position: 0 -81px;
-      animation: menu-move 1s;
-      animation-fill-mode: forwards; }
 @-webkit-keyframes menu-move {
   0% {
     position: absolute;
@@ -96,5 +54,157 @@ body {
     top: 0;
     right: 300px;
     z-index: 10; } }
+/* ==================================================
+    animation button menu-move-back
+================================================== */
+@-webkit-keyframes menu-move-back {
+  0% {
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    z-index: 2; }
+  100% {
+    position: absolute;
+    top: -5px;
+    right: 296px;
+    z-index: 2; } }
+@-moz-keyframes menu-move-back {
+  0% {
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    z-index: 2; }
+  100% {
+    position: absolute;
+    top: -5px;
+    right: 296px;
+    z-index: 2; } }
+@-o-keyframes menu-move-back {
+  0% {
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    z-index: 2; }
+  100% {
+    position: absolute;
+    top: -5px;
+    right: 296px;
+    z-index: 2; } }
+@keyframes menu-move-back {
+  0% {
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    z-index: 2; }
+  100% {
+    position: absolute;
+    top: -5px;
+    right: 296px;
+    z-index: 2; } }
+/* ==================================================
+    animation button menu-move-arrow
+================================================== */
+@-webkit-keyframes menu-move-arrow {
+  0% {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    z-index: 3; }
+  100% {
+    position: absolute;
+    top: 9px;
+    right: 280px;
+    z-index: 3; } }
+@-moz-keyframes menu-move-arrow {
+  0% {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    z-index: 3; }
+  100% {
+    position: absolute;
+    top: 9px;
+    right: 280px;
+    z-index: 3; } }
+@-o-keyframes menu-move-arrow {
+  0% {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    z-index: 3; }
+  100% {
+    position: absolute;
+    top: 9px;
+    right: 280px;
+    z-index: 3; } }
+@keyframes menu-move-arrow {
+  0% {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    z-index: 3; }
+  100% {
+    position: absolute;
+    top: 9px;
+    right: 280px;
+    z-index: 3; } }
+/* ==================================================
+    Page d'acceuil    
+================================================== */
+body {
+  height: 1500px; }
+  body .name {
+    color: red;
+    position: fixed;
+    top: 20px;
+    left: 20px; }
+  body .menu-emplacement {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 80px; }
+    body .menu-emplacement:hover {
+      cursor: pointer;
+      width: 400px; }
+    body .menu-emplacement .menu-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      width: 80px;
+      height: 80px;
+      display: block;
+      background: url("../img/icon-vache-menu.png");
+      background-repeat: no-repeat; }
+    body .menu-emplacement .arrow.menu {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+      z-index: 1;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 30px solid #681313;
+      border-bottom: 30px solid transparent;
+      border-top: 30px solid transparent; }
+    body .menu-emplacement .round-circle {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      right: -4px;
+      z-index: 2;
+      background: #681313; }
+    body .menu-emplacement:hover .menu-icon {
+      background-position: 0 -81px;
+      animation: menu-move 2s;
+      animation-fill-mode: forwards; }
+    body .menu-emplacement:hover .arrow.menu {
+      animation: menu-move-arrow 2s;
+      animation-fill-mode: forwards; }
+    body .menu-emplacement:hover .round-circle {
+      animation: menu-move-back 2s;
+      animation-fill-mode: forwards; }
 
 /*# sourceMappingURL=style.css.map */

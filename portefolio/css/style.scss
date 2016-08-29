@@ -2,6 +2,8 @@
     IMPORT      
 ================================================== */
 @import 'mixin.scss';
+@import 'animation.scss';
+
 
 
 
@@ -17,11 +19,11 @@ height: 1500px;
     }
     .menu-emplacement {
 		@include position-fixed("20px", "20px", false, false);
-		width: 400px;
 		height:80px;
 
 		&:hover {
  			cursor: pointer;
+			width: 400px;
 		
 		}
     	.menu-icon {
@@ -37,50 +39,28 @@ height: 1500px;
 		     	content: '';
 				width: 0;
 				height: 0;
-				border-left: 34.6px solid $color-blue;
-				border-bottom: 20px solid transparent;
-				border-top: 20px solid transparent;
+				border-left: 30px solid $color-brown;
+				border-bottom: 30px solid transparent;
+				border-top: 30px solid transparent;
 				
 		}
-
-		&:hover .menu-icon{
-			background-position:0 -81px;
-		 	animation: menu-move 1s;
-			animation-fill-mode: forwards;
-			
-
+		.round-circle {
+			@include raduis-button("88px","88px");
+			@include position-absolute("-5px","-4px", false, false,"2");
+			background: $color-brown;
 		}
-		@-webkit-keyframes menu-move {
-			0%{ 
-				@include position-absolute("0","0", false, false,"10");
-			}
-			100%{
-				@include position-absolute("0","300px", false, false,"10");
-		 	}
-		 } 
-		@-moz-keyframes menu-move {
-			0%{ 
-				@include position-absolute("0","0", false, false,"10");
-			}
-			100%{
-				@include position-absolute("0","300px", false, false,"10");
-		 	}
-		 } 
-		@-o-keyframes menu-move{ 
-			0%{ 
-				@include position-absolute("0","0", false, false,"10");
-			}
-			100%{
-				@include position-absolute("0","300px", false, false,"10");
-		 	}
-		 }
-		@keyframes menu-move{ 
-			0%{ 
-				@include position-absolute("0","0", false, false,"10");
-			}
-			100%{
-				@include position-absolute("0","300px", false, false,"10");
-		 	}
-		} 
+		&:hover .menu-icon {
+			background-position:0 -81px;
+		 	animation: menu-move 2s;
+			animation-fill-mode: forwards;
+		}
+		&:hover .arrow.menu {
+		 	animation: menu-move-arrow 2s;
+			animation-fill-mode: forwards;
+		}
+		&:hover .round-circle {
+		 	animation: menu-move-back 2s;
+			animation-fill-mode: forwards;
+		}
 	}
 }
