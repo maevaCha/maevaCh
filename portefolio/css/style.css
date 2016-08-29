@@ -1,0 +1,100 @@
+/* ==================================================
+    IMPORT      
+================================================== */
+/* ==================================================
+    COLORS  
+================================================== */
+/* ==================================================
+    round button 
+================================================== */
+@raduis-button ($width, $height) {
+  border-radius: 50%; }
+/* ==================================================
+    Page d'acceuil    
+================================================== */
+body {
+  height: 1500px; }
+  body .name {
+    color: red;
+    position: fixed;
+    top: 20px;
+    left: 20px; }
+  body .menu-emplacement {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    height: 80px; }
+    body .menu-emplacement:hover {
+      cursor: pointer; }
+    body .menu-emplacement .menu-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      width: 80px;
+      height: 80px;
+      display: block;
+      background: url("../img/icon-vache-menu.png");
+      background-repeat: no-repeat; }
+    body .menu-emplacement .arrow.menu {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+      z-index: 1;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 34.6px solid #22afcd;
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid transparent; }
+    body .menu-emplacement:hover .menu-icon {
+      background-position: 0 -81px;
+      animation: menu-move 1s;
+      animation-fill-mode: forwards; }
+@-webkit-keyframes menu-move {
+  0% {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  100% {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    z-index: 10; } }
+@-moz-keyframes menu-move {
+  0% {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  100% {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    z-index: 10; } }
+@-o-keyframes menu-move {
+  0% {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  100% {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    z-index: 10; } }
+@keyframes menu-move {
+  0% {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  100% {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    z-index: 10; } }
+
+/*# sourceMappingURL=style.css.map */

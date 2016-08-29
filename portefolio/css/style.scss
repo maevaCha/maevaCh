@@ -1,0 +1,86 @@
+/* ==================================================
+    IMPORT      
+================================================== */
+@import 'mixin.scss';
+
+
+
+/* ==================================================
+    Page d'acceuil    
+================================================== */
+body {
+height: 1500px;
+
+    .name {
+        color: red;
+	@include position-fixed("20px", false, false, "20px");
+    }
+    .menu-emplacement {
+		@include position-fixed("20px", "20px", false, false);
+		width: 400px;
+		height:80px;
+
+		&:hover {
+ 			cursor: pointer;
+		
+		}
+    	.menu-icon {
+			@include position-absolute("0","0", false, false,"10");
+			width:80px;
+			height:80px;
+			display:block;
+			background: url('../img/icon-vache-menu.png');
+			background-repeat: no-repeat;
+		}
+		.arrow.menu {
+				@include position-absolute("18px","10px", false, false,"1");
+		     	content: '';
+				width: 0;
+				height: 0;
+				border-left: 34.6px solid $color-blue;
+				border-bottom: 20px solid transparent;
+				border-top: 20px solid transparent;
+				
+		}
+
+		&:hover .menu-icon{
+			background-position:0 -81px;
+		 	animation: menu-move 1s;
+			animation-fill-mode: forwards;
+			
+
+		}
+		@-webkit-keyframes menu-move {
+			0%{ 
+				@include position-absolute("0","0", false, false,"10");
+			}
+			100%{
+				@include position-absolute("0","300px", false, false,"10");
+		 	}
+		 } 
+		@-moz-keyframes menu-move {
+			0%{ 
+				@include position-absolute("0","0", false, false,"10");
+			}
+			100%{
+				@include position-absolute("0","300px", false, false,"10");
+		 	}
+		 } 
+		@-o-keyframes menu-move{ 
+			0%{ 
+				@include position-absolute("0","0", false, false,"10");
+			}
+			100%{
+				@include position-absolute("0","300px", false, false,"10");
+		 	}
+		 }
+		@keyframes menu-move{ 
+			0%{ 
+				@include position-absolute("0","0", false, false,"10");
+			}
+			100%{
+				@include position-absolute("0","300px", false, false,"10");
+		 	}
+		} 
+	}
+}

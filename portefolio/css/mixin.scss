@@ -1,0 +1,72 @@
+
+/* ==================================================
+    COLORS  
+================================================== */
+$color-white:#fff;
+$color-blue:#22afcd;
+
+
+
+/* ==================================================
+    round button 
+================================================== */
+
+@raduis-button($width, $height) {
+    $width    : false !default;
+    $height  : false !default;
+	@if $width {
+		width : unquote($width);
+	}
+	@if $height {
+		height : unquote($height);
+	}
+	border-radius: 50%;
+}
+
+@mixin position-fixed($top, $right, $bottom, $left) {
+    $top    : false !default;
+    $right  : false !default;
+    $bottom : false !default;
+    $left   : false !default;
+
+    position : fixed;
+    
+    @if $top {
+        top : unquote($top);
+    }
+    @if $right {
+        right : unquote($right);
+    }
+    @if $bottom {
+        bottom : unquote($bottom);
+    }
+    @if $left {
+        left : unquote($left);
+    }
+}
+@mixin position-absolute($top, $right, $bottom, $left,$z-index) {
+    $top    : false !default;
+    $right  : false !default;
+    $bottom : false !default;
+    $left   : false !default;
+	$z-index : false !default;
+    position : absolute;
+    
+    @if $top {
+        top : unquote($top);
+    }
+    @if $right {
+        right : unquote($right);
+    }
+    @if $bottom {
+        bottom : unquote($bottom);
+    }
+    @if $left {
+        left : unquote($left);
+    }
+    @if $z-index {
+        z-index : unquote($z-index);
+    }
+}
+
+
