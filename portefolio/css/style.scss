@@ -60,21 +60,35 @@ height: 1500px;
 			@include position-absolute("-5px","-4px", false, false,"2");
 			background: $color-brown;
 		}
-		&:hover .menu-icon {
+		&.animation-up .menu-icon {
+			@include position-absolute("0","0", false, false,"10");
 			background-position:0 -81px;
-		 	animation: menu-move 2s;
+		 	animation: menu-move 1s;
 			animation-fill-mode: forwards;
 		}
-		&:hover .arrow.menu {
-		 	animation: menu-move-arrow 2s;
+		&.animation-down .menu-icon {
+			background-position:0 0;
+		 	animation: menu-move-init 1s;
 			animation-fill-mode: forwards;
 		}
-		&:hover .round-circle {
-		 	animation: menu-move-back 2s;
+		&.animation-up .arrow.menu {
+		 	animation: menu-move-arrow 1s;
 			animation-fill-mode: forwards;
 		}
-		&:hover .background-effect-rectangle {
-		 	animation: menu-move-background 2s;
+		&.animation-down .arrow.menu {
+		 	animation: menu-move-arrow-init 1s;
+			animation-fill-mode: forwards;
+		}
+		&.animation-up .round-circle {
+		 	animation: menu-move-back 1s;
+			animation-fill-mode: forwards;
+		}
+		&.animation-down .round-circle {
+		 	animation: menu-move-back-init 1s;
+			animation-fill-mode: forwards;
+		}
+		&.animation-up .background-effect-rectangle {
+		 	animation: menu-move-background 1s;
 			animation-fill-mode: forwards;
 		}
 	}

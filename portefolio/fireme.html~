@@ -18,17 +18,17 @@
 
     <title>About Me</title>
 
+    <!--lib jquery -->
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 
     <!--json -->
     <script id="data" type="application/json" src="json/data.json"></script>
 
-    <!--lib jquery -->
-    <script src="jquery-1.12.4.min.js"></script>
-
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="./js/effect.js"></script>
+    <script type="text/javascript" src="js/effect.js"></script>
 
 </head>
 <body>
@@ -42,7 +42,7 @@
 				<span class="arrow menu"></span>
 				<span class="round-circle menu"></span>
 				<span class="background-effect-circle menu"></span>
-				<span class="background-effect-rectangle"></span>
+				<span class="background-effect-rectangle menu"></span>
 	
 			</div>
 		</div>
