@@ -19,7 +19,7 @@
   100% {
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 200px;
     z-index: 10; } }
 @-moz-keyframes menu-move {
   0% {
@@ -30,7 +30,7 @@
   100% {
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 200px;
     z-index: 10; } }
 @-o-keyframes menu-move {
   0% {
@@ -41,7 +41,7 @@
   100% {
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 200px;
     z-index: 10; } }
 @keyframes menu-move {
   0% {
@@ -52,7 +52,7 @@
   100% {
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 200px;
     z-index: 10; } }
 /* ==================================================
     animation button menu-move-back
@@ -66,7 +66,7 @@
   100% {
     position: absolute;
     top: -5px;
-    right: 296px;
+    right: 196px;
     z-index: 2; } }
 @-moz-keyframes menu-move-back {
   0% {
@@ -77,7 +77,7 @@
   100% {
     position: absolute;
     top: -5px;
-    right: 296px;
+    right: 196px;
     z-index: 2; } }
 @-o-keyframes menu-move-back {
   0% {
@@ -88,7 +88,7 @@
   100% {
     position: absolute;
     top: -5px;
-    right: 296px;
+    right: 196px;
     z-index: 2; } }
 @keyframes menu-move-back {
   0% {
@@ -99,7 +99,7 @@
   100% {
     position: absolute;
     top: -5px;
-    right: 296px;
+    right: 196px;
     z-index: 2; } }
 /* ==================================================
     animation button menu-move-arrow
@@ -113,7 +113,7 @@
   100% {
     position: absolute;
     top: 9px;
-    right: 280px;
+    right: 180px;
     z-index: 3; } }
 @-moz-keyframes menu-move-arrow {
   0% {
@@ -124,7 +124,7 @@
   100% {
     position: absolute;
     top: 9px;
-    right: 280px;
+    right: 180px;
     z-index: 3; } }
 @-o-keyframes menu-move-arrow {
   0% {
@@ -135,7 +135,7 @@
   100% {
     position: absolute;
     top: 9px;
-    right: 280px;
+    right: 180px;
     z-index: 3; } }
 @keyframes menu-move-arrow {
   0% {
@@ -146,8 +146,31 @@
   100% {
     position: absolute;
     top: 9px;
-    right: 280px;
+    right: 180px;
     z-index: 3; } }
+/* ==================================================
+    animation button menu-move-background
+================================================== */
+@-webkit-keyframes menu-move-background {
+  0% {
+    width: 0; }
+  100% {
+    width: 200px; } }
+@-moz-keyframes menu-move-background {
+  0% {
+    width: 0; }
+  100% {
+    width: 200px; } }
+@-o-keyframes menu-move-background {
+  0% {
+    width: 0; }
+  100% {
+    width: 200px; } }
+@keyframes menu-move-background {
+  0% {
+    width: 0; }
+  100% {
+    width: 200px; } }
 /* ==================================================
     Page d'acceuil    
 ================================================== */
@@ -165,7 +188,7 @@ body {
     height: 80px; }
     body .menu-emplacement:hover {
       cursor: pointer;
-      width: 400px; }
+      width: 200px; }
     body .menu-emplacement .menu-icon {
       position: absolute;
       top: 0;
@@ -184,9 +207,26 @@ body {
       content: '';
       width: 0;
       height: 0;
-      border-left: 30px solid #681313;
+      border-left: 28px solid #681313;
       border-bottom: 30px solid transparent;
       border-top: 30px solid transparent; }
+    body .menu-emplacement .background-effect-circle {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      right: -4px;
+      z-index: 0;
+      background: #f3f3f3; }
+    body .menu-emplacement .background-effect-rectangle {
+      position: absolute;
+      top: -5px;
+      right: 37px;
+      z-index: -1;
+      background: #f3f3f3;
+      height: 88px;
+      text-align: right; }
     body .menu-emplacement .round-circle {
       width: 88px;
       height: 88px;
@@ -205,6 +245,9 @@ body {
       animation-fill-mode: forwards; }
     body .menu-emplacement:hover .round-circle {
       animation: menu-move-back 2s;
+      animation-fill-mode: forwards; }
+    body .menu-emplacement:hover .background-effect-rectangle {
+      animation: menu-move-background 2s;
       animation-fill-mode: forwards; }
 
 /*# sourceMappingURL=style.css.map */

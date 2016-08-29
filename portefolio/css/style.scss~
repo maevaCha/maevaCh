@@ -23,7 +23,7 @@ height: 1500px;
 
 		&:hover {
  			cursor: pointer;
-			width: 400px;
+			width: 200px;
 		
 		}
     	.menu-icon {
@@ -39,10 +39,21 @@ height: 1500px;
 		     	content: '';
 				width: 0;
 				height: 0;
-				border-left: 30px solid $color-brown;
+				border-left: 28px solid $color-brown;
 				border-bottom: 30px solid transparent;
 				border-top: 30px solid transparent;
 				
+		}
+		.background-effect-circle {
+			@include raduis-button("88px","88px");
+			@include position-absolute("-5px","-4px", false, false,"0");
+			background: $color-grey;
+		}
+		.background-effect-rectangle {
+			@include position-absolute("-5px","37px", false, false,"-1");
+			background: $color-grey;
+			height: 88px;
+			text-align: right;
 		}
 		.round-circle {
 			@include raduis-button("88px","88px");
@@ -60,6 +71,10 @@ height: 1500px;
 		}
 		&:hover .round-circle {
 		 	animation: menu-move-back 2s;
+			animation-fill-mode: forwards;
+		}
+		&:hover .background-effect-rectangle {
+		 	animation: menu-move-background 2s;
 			animation-fill-mode: forwards;
 		}
 	}
