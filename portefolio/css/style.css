@@ -10,6 +10,18 @@
 /* ==================================================
     animation delay 
 ================================================== */
+@font-face {
+  font-family: leaguegothic;
+  src: url("font/leaguegothic-regular-webfont.eot");
+  src: url("font/leaguegothic-regular-webfont.woff") format("woff"), url("font/leaguegothic-regular-webfont.ttf") format("truetype"), url("font/leaguegothic-regular-webfont.svg") format("svg"); }
+@font-face {
+  font-family: leaguegothic-italic;
+  src: url("font/leaguegothic-italic-webfont.eot");
+  src: url("font/leaguegothic-italic-webfont.woff") format("woff"), url("font/leaguegothic-italic-webfont.ttf") format("truetype"), url("font/leaguegothic-italic-webfont.svg") format("svg"); }
+@font-face {
+  font-family: leaguegothic-condensed;
+  src: url("font/leaguegothic-condensed-regular-webfont.eot");
+  src: url("font/leaguegothic-condensed-regular-webfont.woff") format("woff"), url("font/leaguegothic-condensed-regular-webfont.ttf") format("truetype"), url("font/leaguegothic-condensed-regular-webfont.svg") format("svg"); }
 /* ==================================================
     Page d'acceuil    
 ================================================== */
@@ -87,6 +99,14 @@ body {
       -moz-transition: transform 1s;
       -o-transition: transform 1s;
       transition: transform 1s; }
+      body .menu-emplacement .text-menu .text-principal {
+        color: #22afcd;
+        font-family: 'leaguegothic-condensed', sans-serif;
+        font-weight: bold;
+        font-size: 16px; }
+      body .menu-emplacement .text-menu .text-soustitre {
+        font-size: 12px;
+        color: #681313; }
     body .menu-emplacement .background-effect-circle {
       width: 88px;
       height: 88px;

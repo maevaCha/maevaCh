@@ -1,3 +1,14 @@
-
+@font-face {
+  font-family: leaguegothic;
+  src: url("font/leaguegothic-regular-webfont.eot");
+  src: url("font/leaguegothic-regular-webfont.woff") format("woff"), url("font/leaguegothic-regular-webfont.ttf") format("truetype"), url("font/leaguegothic-regular-webfont.svg") format("svg"); }
+@font-face {
+  font-family: leaguegothic-italic;
+  src: url("font/leaguegothic-italic-webfont.eot");
+  src: url("font/leaguegothic-italic-webfont.woff") format("woff"), url("font/leaguegothic-italic-webfont.ttf") format("truetype"), url("font/leaguegothic-italic-webfont.svg") format("svg"); }
+@font-face {
+  font-family: leaguegothic-condensed;
+  src: url("font/leaguegothic-condensed-regular-webfont.eot");
+  src: url("font/leaguegothic-condensed-regular-webfont.woff") format("woff"), url("font/leaguegothic-condensed-regular-webfont.ttf") format("truetype"), url("font/leaguegothic-condensed-regular-webfont.svg") format("svg"); }
 
 /*# sourceMappingURL=font.css.map */

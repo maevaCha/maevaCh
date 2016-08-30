@@ -62,6 +62,16 @@ height: 1500px;
 			@include position-absolute("10px","300px", false, false,"6");
 			width: 180px;
 			@include animation-css("transform", "1s");
+			.text-principal {
+				color: $color-blue;
+				font-family: 'leaguegothic-condensed', sans-serif;
+				font-weight: bold; 
+				font-size: 16px;
+			}
+			.text-soustitre {
+				font-size: 12px;
+				color: $color-brown;
+			}
 		}
 		.background-effect-circle {
 			@include raduis-button("88px","88px");
