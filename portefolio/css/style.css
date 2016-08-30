@@ -83,10 +83,10 @@ body {
       right: 300px;
       z-index: 6;
       width: 180px;
-      -webkit-transition: transform 2s;
-      -moz-transition: transform 2s;
-      -o-transition: transform 2s;
-      transition: transform 2s; }
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s; }
     body .menu-emplacement .background-effect-circle {
       width: 88px;
       height: 88px;
@@ -146,10 +146,10 @@ body {
       -o-transition: width 1s;
       transition: width 1s; }
     body .menu-emplacement:hover .text-menu {
-      -webkit-transition: transform 2s;
-      -moz-transition: transform 2s;
-      -o-transition: transform 2s;
-      transition: transform 2s;
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s;
       transform: translate(300px, 0px); }
     body .menu-emplacement:hover .round-circle {
       -webkit-transition: transform 1s;

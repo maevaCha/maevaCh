@@ -61,7 +61,7 @@ height: 1500px;
 		.text-menu {
 			@include position-absolute("10px","300px", false, false,"6");
 			width: 180px;
-			@include animation-css("transform", "2s");
+			@include animation-css("transform", "1s");
 		}
 		.background-effect-circle {
 			@include raduis-button("88px","88px");
@@ -99,7 +99,7 @@ height: 1500px;
 			@include animation-css("width", "1s");
 		}
 		&:hover .text-menu {
-			@include animation-css("transform", "2s");
+			@include animation-css("transform", "1s");
 			transform: translate(300px,0px);
 		}
 		&:hover .round-circle {

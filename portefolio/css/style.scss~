@@ -56,13 +56,12 @@ height: 1500px;
 			height: 88px;
 			overflow:hidden;
 			@include animation-css("width", "1s");
-			background: red;
-				@include position-fixed("20px", "20px", false, false);
+			@include position-fixed("20px", "20px", false, false);
 		}
 		.text-menu {
 			@include position-absolute("10px","300px", false, false,"6");
 			width: 180px;
-			@include animation-css("transform", "2s");
+			@include animation-css("transform", "1s");
 		}
 		.background-effect-circle {
 			@include raduis-button("88px","88px");
