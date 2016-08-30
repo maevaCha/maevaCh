@@ -36,16 +36,22 @@
 		maeva 
 	</div>
 	<div class="menu-emplacement">
-		<div class="wrapper-menu">
-			<div class="round-button menu">
+		
+			
 				<span class="menu-icon sprite"></span>
 				<span class="arrow menu"></span>
 				<span class="round-circle menu"></span>
+				<div class="text-wrapper">
+				<span class="text-menu">
+					<p class="text-principal">MEUHNU</p>
+					<p class="text-soustitre">Cliquez ici pour activer le menu</p>				
+				</span>
+				</div>
 				<span class="background-effect-circle menu"></span>
 				<span class="background-effect-rectangle menu"></span>
 	
-			</div>
-		</div>
+		
+	
 	</div>
 
 </body>

@@ -2,7 +2,7 @@
     IMPORT      
 ================================================== */
 @import 'mixin.scss';
-@import 'animation.scss';
+@import 'font.scss';
 
 
 
@@ -19,15 +19,18 @@ height: 1500px;
     }
     .menu-emplacement {
 		@include position-fixed("20px", "20px", false, false);
-		height:80px;
+		height: 88px;
+		width: 88px;
+		@include animation-css("width", "1s");
 
 		&:hover {
  			cursor: pointer;
-			width: 200px;
+			width: 288px;
+			@include animation-css("width", "1s");
 		
 		}
     	.menu-icon {
-			@include position-absolute("0","0", false, false,"10");
+			@include position-absolute("4px","4px", false, false,"10");
 			width:80px;
 			height:80px;
 			display:block;
@@ -38,7 +41,7 @@ height: 1500px;
 
 		}
 		.arrow.menu {
-			@include position-absolute("8px","10px", false, false,"1");
+			@include position-absolute("12px","10px", false, false,"8");
 	     	content: '';
 			width: 0;
 			height: 0;
@@ -48,14 +51,26 @@ height: 1500px;
 			@include animation-css("transform", "1s");
 				
 		}
+		.text-wrapper {
+			width: 0px;
+			height: 88px;
+			overflow:hidden;
+			@include animation-css("width", "1s");
+			@include position-fixed("20px", "20px", false, false);
+		}
+		.text-menu {
+			@include position-absolute("10px","300px", false, false,"6");
+			width: 180px;
+			@include animation-css("transform", "2s");
+		}
 		.background-effect-circle {
 			@include raduis-button("88px","88px");
-			@include position-absolute("-5px","-4px", false, false,"0");
+			@include position-absolute("0","0", false, false,"0");
 			background: $color-grey;
 			@include animation-css("transform", "1s");	
 		}
 		.background-effect-rectangle {
-			@include position-absolute("-5px","37px", false, false,"-1");
+			@include position-absolute("0px","37px", false, false,"-1");
 			background: $color-grey;
 			height: 88px;
 			width: 0px;
@@ -64,7 +79,7 @@ height: 1500px;
 		}
 		.round-circle {
 			@include raduis-button("88px","88px");
-			@include position-absolute("-5px","-4px", false, false,"2");
+			@include position-absolute("0","0", false, false,"9");
 			background: $color-brown;
 			@include animation-css("transform", "1s");
 		}
@@ -76,8 +91,16 @@ height: 1500px;
 
 		&:hover .arrow.menu {
 			@include animation-css("transform", "1s");
-			transform: translate(-170px,0px);
+			transform: translate(-175px,0px);
 
+		}
+		&:hover .text-wrapper {
+			width: 243px;
+			@include animation-css("width", "1s");
+		}
+		&:hover .text-menu {
+			@include animation-css("transform", "2s");
+			transform: translate(300px,0px);
 		}
 		&:hover .round-circle {
 			@include animation-css("transform", "1s");
