@@ -1,10 +1,9 @@
 
 
-
 /* ==================================================
     animation button menu-move
 ================================================== */
-
+/*
 @-webkit-keyframes menu-move {
 		0%{ 
 			@include position-absolute("0","0", false, false,"10");
@@ -37,12 +36,12 @@
 			@include position-absolute("0","200px", false, false,"10");
 	 	}
 	} 
-
+*/
 
 /* ==================================================
     animation button menu-move-init
 ================================================== */
-
+/*
 @-webkit-keyframes menu-move-init {
 		0%{ 
 			@include position-absolute("0","200px", false, false,"10");
@@ -78,11 +77,11 @@
 	} 
 
 
-
+*/
 /* ==================================================
     animation button menu-move-back
 ================================================== */
-
+/*
 @-webkit-keyframes menu-move-back {
 		0%{ 
 			@include position-absolute("-5px","-4px", false, false,"2");
@@ -115,11 +114,11 @@
 			@include position-absolute("-5px","196px", false, false,"2");
 	 	}
 	} 
-
+*/
 /* ==================================================
     animation button menu-move-back-init
 ================================================== */
-
+/*
 @-webkit-keyframes menu-move-back-init {
 		0%{ 
 			@include position-absolute("-5px","196px", false, false,"2");
@@ -152,11 +151,11 @@
 			@include position-absolute("-5px","-4px", false, false,"2");
 	 	}
 	} 
-
+*/
 /* ==================================================
     animation button menu-move-arrow
 ================================================== */
-
+/*
 @-webkit-keyframes menu-move-arrow {
 		0%{ 
 			@include position-absolute("9px","10px", false, false,"3");
@@ -189,6 +188,7 @@
 			@include position-absolute("9px","180px", false, false,"3");
 	 	}
 	} 
+*/
 /* ==================================================
     animation button menu-move-arrow-init
 ================================================== */
@@ -231,7 +231,7 @@
 /* ==================================================
     animation button menu-move-background
 ================================================== */
-
+/*
 @-webkit-keyframes menu-move-background {
 		0%{ 
 			width: 0;
@@ -265,6 +265,6 @@
 	 	}
 	} 
 
-
+*/
 
 

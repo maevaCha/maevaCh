@@ -33,63 +33,61 @@ height: 1500px;
 			display:block;
 			background: url('../img/icon-vache-menu.png');
 			background-repeat: no-repeat;
+			@include animation-css("transform", "1s");
+			
+
 		}
 		.arrow.menu {
-				@include position-absolute("18px","10px", false, false,"1");
-		     	content: '';
-				width: 0;
-				height: 0;
-				border-left: 28px solid $color-brown;
-				border-bottom: 30px solid transparent;
-				border-top: 30px solid transparent;
+			@include position-absolute("8px","10px", false, false,"1");
+	     	content: '';
+			width: 0;
+			height: 0;
+			border-left: 28px solid $color-brown;
+			border-bottom: 30px solid transparent;
+			border-top: 30px solid transparent;
+			@include animation-css("transform", "1s");
 				
 		}
 		.background-effect-circle {
 			@include raduis-button("88px","88px");
 			@include position-absolute("-5px","-4px", false, false,"0");
 			background: $color-grey;
+			@include animation-css("transform", "1s");	
 		}
 		.background-effect-rectangle {
 			@include position-absolute("-5px","37px", false, false,"-1");
 			background: $color-grey;
 			height: 88px;
+			width: 0px;
 			text-align: right;
+			@include animation-css("width", "1s");
 		}
 		.round-circle {
 			@include raduis-button("88px","88px");
 			@include position-absolute("-5px","-4px", false, false,"2");
 			background: $color-brown;
+			@include animation-css("transform", "1s");
 		}
-		&.animation-up .menu-icon {
-			@include position-absolute("0","0", false, false,"10");
+		&:hover .menu-icon {
 			background-position:0 -81px;
-		 	animation: menu-move 1s;
-			animation-fill-mode: forwards;
+			transform: translate(-200px,0px);
+			@include animation-css("transform", "1s");		  
 		}
-		&.animation-down .menu-icon {
-			background-position:0 0;
-		 	animation: menu-move-init 1s;
-			animation-fill-mode: forwards;
+
+		&:hover .arrow.menu {
+			@include animation-css("transform", "1s");
+			transform: translate(-170px,0px);
+
 		}
-		&.animation-up .arrow.menu {
-		 	animation: menu-move-arrow 1s;
-			animation-fill-mode: forwards;
+		&:hover .round-circle {
+			@include animation-css("transform", "1s");
+			transform: translate(-200px,0px);
+
 		}
-		&.animation-down .arrow.menu {
-		 	animation: menu-move-arrow-init 1s;
-			animation-fill-mode: forwards;
-		}
-		&.animation-up .round-circle {
-		 	animation: menu-move-back 1s;
-			animation-fill-mode: forwards;
-		}
-		&.animation-down .round-circle {
-		 	animation: menu-move-back-init 1s;
-			animation-fill-mode: forwards;
-		}
-		&.animation-up .background-effect-rectangle {
-		 	animation: menu-move-background 1s;
-			animation-fill-mode: forwards;
+		&:hover .background-effect-rectangle {
+			@include animation-css("width", "1s");
+			width: 200px;
+			
 		}
 	}
 }

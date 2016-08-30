@@ -71,4 +71,18 @@ $color-grey: #f3f3f3;
     }
 }
 
+/* ==================================================
+    animation delay 
+================================================== */
+@mixin animation-css ($animation, $delay) {
+
+	-webkit-transition: unquote($animation) unquote($delay);
+	-moz-transition: unquote($animation) unquote($delay);
+	-o-transition: unquote($animation) unquote($delay);
+	transition: unquote($animation) unquote($delay);
+	$delay: 1s !default;
+	$animation: transform !default;	
+
+}
+
 

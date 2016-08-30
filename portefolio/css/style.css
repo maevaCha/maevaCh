@@ -8,310 +8,8 @@
     round button 
 ================================================== */
 /* ==================================================
-    animation button menu-move
+    animation delay 
 ================================================== */
-@-webkit-keyframes menu-move {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; } }
-@-moz-keyframes menu-move {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; } }
-@-o-keyframes menu-move {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; } }
-@keyframes menu-move {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; } }
-/* ==================================================
-    animation button menu-move-init
-================================================== */
-@-webkit-keyframes menu-move-init {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; } }
-@-moz-keyframes menu-move-init {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; } }
-@-o-keyframes menu-move-init {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; } }
-@keyframes menu-move-init {
-  0% {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    z-index: 10; }
-  100% {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10; } }
-/* ==================================================
-    animation button menu-move-back
-================================================== */
-@-webkit-keyframes menu-move-back {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; } }
-@-moz-keyframes menu-move-back {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; } }
-@-o-keyframes menu-move-back {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; } }
-@keyframes menu-move-back {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; } }
-/* ==================================================
-    animation button menu-move-back-init
-================================================== */
-@-webkit-keyframes menu-move-back-init {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; } }
-@-moz-keyframes menu-move-back-init {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; } }
-@-o-keyframes menu-move-back-init {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; } }
-@keyframes menu-move-back-init {
-  0% {
-    position: absolute;
-    top: -5px;
-    right: 196px;
-    z-index: 2; }
-  100% {
-    position: absolute;
-    top: -5px;
-    right: -4px;
-    z-index: 2; } }
-/* ==================================================
-    animation button menu-move-arrow
-================================================== */
-@-webkit-keyframes menu-move-arrow {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; } }
-@-moz-keyframes menu-move-arrow {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; } }
-@-o-keyframes menu-move-arrow {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; } }
-@keyframes menu-move-arrow {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; } }
-/* ==================================================
-    animation button menu-move-arrow-init
-================================================== */
-@-webkit-keyframes menu-move-arrow-init {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; } }
-@-moz-keyframes menu-move-arrow-init {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; } }
-@-o-keyframes menu-move-arrow-init {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; } }
-@keyframes menu-move-arrow-init {
-  0% {
-    position: absolute;
-    top: 9px;
-    right: 180px;
-    z-index: 3; }
-  100% {
-    position: absolute;
-    top: 9px;
-    right: 10px;
-    z-index: 3; } }
-/* ==================================================
-    animation button menu-move-background
-================================================== */
-@-webkit-keyframes menu-move-background {
-  0% {
-    width: 0; }
-  100% {
-    width: 200px; } }
-@-moz-keyframes menu-move-background {
-  0% {
-    width: 0; }
-  100% {
-    width: 200px; } }
-@-o-keyframes menu-move-background {
-  0% {
-    width: 0; }
-  100% {
-    width: 200px; } }
-@keyframes menu-move-background {
-  0% {
-    width: 0; }
-  100% {
-    width: 200px; } }
 /* ==================================================
     Page d'acceuil    
 ================================================== */
@@ -339,10 +37,14 @@ body {
       height: 80px;
       display: block;
       background: url("../img/icon-vache-menu.png");
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s; }
     body .menu-emplacement .arrow.menu {
       position: absolute;
-      top: 18px;
+      top: 8px;
       right: 10px;
       z-index: 1;
       content: '';
@@ -350,7 +52,11 @@ body {
       height: 0;
       border-left: 28px solid #681313;
       border-bottom: 30px solid transparent;
-      border-top: 30px solid transparent; }
+      border-top: 30px solid transparent;
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s; }
     body .menu-emplacement .background-effect-circle {
       width: 88px;
       height: 88px;
@@ -359,7 +65,11 @@ body {
       top: -5px;
       right: -4px;
       z-index: 0;
-      background: #f3f3f3; }
+      background: #f3f3f3;
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s; }
     body .menu-emplacement .background-effect-rectangle {
       position: absolute;
       top: -5px;
@@ -367,7 +77,12 @@ body {
       z-index: -1;
       background: #f3f3f3;
       height: 88px;
-      text-align: right; }
+      width: 0px;
+      text-align: right;
+      -webkit-transition: width 1s;
+      -moz-transition: width 1s;
+      -o-transition: width 1s;
+      transition: width 1s; }
     body .menu-emplacement .round-circle {
       width: 88px;
       height: 88px;
@@ -376,33 +91,35 @@ body {
       top: -5px;
       right: -4px;
       z-index: 2;
-      background: #681313; }
-    body .menu-emplacement.animation-up .menu-icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 10;
+      background: #681313;
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s; }
+    body .menu-emplacement:hover .menu-icon {
       background-position: 0 -81px;
-      animation: menu-move 1s;
-      animation-fill-mode: forwards; }
-    body .menu-emplacement.animation-down .menu-icon {
-      background-position: 0 0;
-      animation: menu-move-init 1s;
-      animation-fill-mode: forwards; }
-    body .menu-emplacement.animation-up .arrow.menu {
-      animation: menu-move-arrow 1s;
-      animation-fill-mode: forwards; }
-    body .menu-emplacement.animation-down .arrow.menu {
-      animation: menu-move-arrow-init 1s;
-      animation-fill-mode: forwards; }
-    body .menu-emplacement.animation-up .round-circle {
-      animation: menu-move-back 1s;
-      animation-fill-mode: forwards; }
-    body .menu-emplacement.animation-down .round-circle {
-      animation: menu-move-back-init 1s;
-      animation-fill-mode: forwards; }
-    body .menu-emplacement.animation-up .background-effect-rectangle {
-      animation: menu-move-background 1s;
-      animation-fill-mode: forwards; }
+      transform: translate(-200px, 0px);
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s; }
+    body .menu-emplacement:hover .arrow.menu {
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s;
+      transform: translate(-170px, 0px); }
+    body .menu-emplacement:hover .round-circle {
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s;
+      transform: translate(-200px, 0px); }
+    body .menu-emplacement:hover .background-effect-rectangle {
+      -webkit-transition: width 1s;
+      -moz-transition: width 1s;
+      -o-transition: width 1s;
+      transition: width 1s;
+      width: 200px; }
 
 /*# sourceMappingURL=style.css.map */
