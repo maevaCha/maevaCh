@@ -152,8 +152,16 @@ height: 1500px;
 		opacity:0.95;
 		@include position-fixed("0px", "0px",false,false);
 		height: 100%;
-		width: 30%;
+		width: 35%;
 		z-index: -1;
-	display:none;
+		display:none;
+		.overlay-content {
+			margin-top: 160px;
+			a {
+				display: block;	
+				text-decoration: none;
+				color: $color-white;		
+			}
+		}
 	}
 }
