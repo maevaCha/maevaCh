@@ -1,15 +1,12 @@
 $(document).ready(function(){
-
-	var menuHover = function(id) {
-		$(id).hover(	
-			function() {
-				$(id).removeClass('animation-down');
-				$(this).addClass('animation-up');
-			}, function() {
-				$(id).removeClass('animation-up');
-				$(this).addClass('animation-down');
-			}
-		);
-	};
-	menuHover($('.menu-emplacement'));
+	//click on menu
+	var menuClick = function(id) {
+		id.click(function() {
+			//click to see menu add class
+			$(this).toggleClass('active');
+    		$('.overlay').animate({width: 'toggle'}, 500);
+		
+		});
+	}
+	menuClick($('.menu-emplacement'));
 });

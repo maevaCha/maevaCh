@@ -22,6 +22,7 @@ height: 1500px;
 		height: 88px;
 		width: 88px;
 		@include animation-css("width", "1s");
+		z-index: 1;
 
 		&:hover {
  			cursor: pointer;
@@ -59,7 +60,7 @@ height: 1500px;
 			@include position-fixed("20px", "20px", false, false);
 		}
 		.text-menu {
-			@include position-absolute("10px","300px", false, false,"6");
+			@include position-absolute("0px","300px", false, false,"6");
 			width: 180px;
 			@include animation-css("transform", "1s");
 			.text-principal {
@@ -69,7 +70,7 @@ height: 1500px;
 				font-size: 16px;
 			}
 			.text-soustitre {
-				font-style: 12px;
+				font-size: 12px;
 				color: $color-brown;
 			}
 		}
@@ -122,5 +123,37 @@ height: 1500px;
 			width: 200px;
 			
 		}
+	}
+	.active.menu-emplacement {
+		.menu-icon {
+			background-position:0 -161px;
+			transform: translate(0px,0px);
+			@include animation-css("transform", "1s");		
+		}
+		.arrow.menu {
+			@include animation-css("transform", "1s");
+			transform: translate(0px,0px);
+		}
+		.round-circle {
+			@include animation-css("transform", "1s");
+			transform: translate(0px,0px);
+		}
+		.background-effect-rectangle {
+			@include animation-css("width", "1s");
+			width:0px;	
+		}
+		.text-wrapper {
+			width: 0px;
+			@include animation-css("width", "1s");
+		}
+	}
+	.overlay.menu {
+	    background: $color-brown;
+		opacity:0.95;
+		@include position-fixed("0px", "0px",false,false);
+		height: 100%;
+		width: 30%;
+		z-index: -1;
+	display:none;
 	}
 }

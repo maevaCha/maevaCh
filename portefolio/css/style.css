@@ -41,7 +41,8 @@ body {
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -o-transition: width 1s;
-    transition: width 1s; }
+    transition: width 1s;
+    z-index: 1; }
     body .menu-emplacement:hover {
       cursor: pointer;
       width: 288px;
@@ -91,7 +92,7 @@ body {
       right: 20px; }
     body .menu-emplacement .text-menu {
       position: absolute;
-      top: 10px;
+      top: 0px;
       right: 300px;
       z-index: 6;
       width: 180px;
@@ -183,5 +184,46 @@ body {
       -o-transition: width 1s;
       transition: width 1s;
       width: 200px; }
+  body .active.menu-emplacement .menu-icon {
+    background-position: 0 -161px;
+    transform: translate(0px, 0px);
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s; }
+  body .active.menu-emplacement .arrow.menu {
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transform: translate(0px, 0px); }
+  body .active.menu-emplacement .round-circle {
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transform: translate(0px, 0px); }
+  body .active.menu-emplacement .background-effect-rectangle {
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+    width: 0px; }
+  body .active.menu-emplacement .text-wrapper {
+    width: 0px;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s; }
+  body .overlay.menu {
+    background: #681313;
+    opacity: 0.95;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 30%;
+    z-index: -1;
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
