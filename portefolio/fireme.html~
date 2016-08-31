@@ -22,8 +22,9 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
     <!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet"> 
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-
+	
     <!--json -->
     <script id="data" type="application/json" src="json/data.json"></script>
 
@@ -32,6 +33,9 @@
 
 </head>
 <body>
+	<div class="name">
+		maeva 
+	</div>
 	<div class="overlay menu">
 		<menu class="overlay-content">
 			<a class="overlay-link">MEUHOI</a>
@@ -56,9 +60,7 @@
 
 	</div>
 	<div id="About">
-	<div class="name">
-		maeva 
-	</div>
+
 	</div>
 
 </body>

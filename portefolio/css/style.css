@@ -187,34 +187,34 @@ body {
   body .active.menu-emplacement .menu-icon {
     background-position: 0 -161px;
     transform: translate(0px, 0px);
-    -webkit-transition: transform 1s;
-    -moz-transition: transform 1s;
-    -o-transition: transform 1s;
-    transition: transform 1s; }
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s; }
   body .active.menu-emplacement .arrow.menu {
-    -webkit-transition: transform 1s;
-    -moz-transition: transform 1s;
-    -o-transition: transform 1s;
-    transition: transform 1s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
     transform: translate(0px, 0px); }
   body .active.menu-emplacement .round-circle {
-    -webkit-transition: transform 1s;
-    -moz-transition: transform 1s;
-    -o-transition: transform 1s;
-    transition: transform 1s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
     transform: translate(0px, 0px); }
   body .active.menu-emplacement .background-effect-rectangle {
-    -webkit-transition: width 1s;
-    -moz-transition: width 1s;
-    -o-transition: width 1s;
-    transition: width 1s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
     width: 0px; }
   body .active.menu-emplacement .text-wrapper {
     width: 0px;
-    -webkit-transition: width 1s;
-    -moz-transition: width 1s;
-    -o-transition: width 1s;
-    transition: width 1s; }
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s; }
   body .overlay.menu {
     background: #681313;
     opacity: 0.95;
@@ -230,6 +230,10 @@ body {
       body .overlay.menu .overlay-content a {
         display: block;
         text-decoration: none;
-        color: #fff; }
+        color: #fff;
+        font-family: 'Ranchers', cursive;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 0.95; }
 
 /*# sourceMappingURL=style.css.map */

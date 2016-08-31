@@ -128,23 +128,23 @@ height: 1500px;
 		.menu-icon {
 			background-position:0 -161px;
 			transform: translate(0px,0px);
-			@include animation-css("transform", "1s");		
+			@include animation-css("transform", "0.5s");		
 		}
 		.arrow.menu {
-			@include animation-css("transform", "1s");
+			@include animation-css("transform", "0.5s");
 			transform: translate(0px,0px);
 		}
 		.round-circle {
-			@include animation-css("transform", "1s");
+			@include animation-css("transform", "0.5s");
 			transform: translate(0px,0px);
 		}
 		.background-effect-rectangle {
-			@include animation-css("width", "1s");
+			@include animation-css("width", "0.5s");
 			width:0px;	
 		}
 		.text-wrapper {
 			width: 0px;
-			@include animation-css("width", "1s");
+			@include animation-css("width", "0.5s");
 		}
 	}
 	.overlay.menu {
@@ -160,7 +160,11 @@ height: 1500px;
 			a {
 				display: block;	
 				text-decoration: none;
-				color: $color-white;		
+				color: $color-white;
+				font-family: 'Ranchers', cursive;
+				font-weight: 800; 
+				font-size: 60px;
+				line-height:0.95;	
 			}
 		}
 	}

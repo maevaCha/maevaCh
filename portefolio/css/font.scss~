@@ -24,4 +24,8 @@
 	   url('font/leaguegothic-condensed-regular-webfont.svg') format('svg'); 
 
 }
+@font-face {
+	font-family: spicy;
+	src: url('font/SpicyRice-Regular.otf');
+}
 
