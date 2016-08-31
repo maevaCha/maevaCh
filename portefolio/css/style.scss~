@@ -42,7 +42,7 @@ height: 1500px;
 
 		}
 		.arrow.menu {
-			@include position-absolute("12px","10px", false, false,"8");
+			@include position-absolute("14px","10px", false, false,"8");
 	     	content: '';
 			width: 0;
 			height: 0;
