@@ -15,8 +15,13 @@ $(document).ready(function(){
 	}
 	var langChoose = function(link) {
 		link.click(function() {
-			$('.fr').hide();
-			$('.engl').show();
+			if($(this).hasClass('fr')){
+				$('.fr').hide();
+				$('.engl').show();
+			}else {
+				$('.engl').hide();
+				$('.fr').show();
+			}
 		});
 	}
 	langChoose($('.language'));

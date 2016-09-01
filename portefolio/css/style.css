@@ -27,23 +27,27 @@
 ================================================== */
 body {
   height: 1500px; }
+  body .engl {
+    display: none; }
   body .name {
     color: red;
     position: fixed;
     top: 20px;
     left: 20px; }
-  body .engl {
-    display: none; }
-  body .language {
-    background: url("../img/icon-vache-lan.png");
-    width: 80px;
+  body .wrapper-lang {
     height: 80px;
-    display: block;
-    background-repeat: no-repeat; }
-    body .language.fr {
-      background-position: 0 -80px; }
-    body .language.engl {
-      background-position: 0 -0; }
+    width: 80px;
+    overflow: hidden; }
+    body .wrapper-lang .language {
+      background: url("../img/icon-vache-lan.png");
+      width: 80px;
+      height: 80px;
+      display: block;
+      background-repeat: no-repeat; }
+      body .wrapper-lang .language.fr {
+        background-position: 0 -80px; }
+      body .wrapper-lang .language.engl {
+        background-position: 0 -0; }
   body .menu-emplacement {
     position: fixed;
     top: 20px;
@@ -201,10 +205,13 @@ body {
           transform: translate(-60%, 0px);
           text-align: center;
           color: #22afcd; }
+    body .overlay.menu .menu-footer {
+      width: 80%;
+      margin: 0 auto; }
     body .overlay.menu .menu-search {
       width: 80%;
       position: relative;
-      margin: 60px auto 0; }
+      margin: 60px auto 60px; }
     body .overlay.menu .menu-search-field {
       background: none;
       display: block;

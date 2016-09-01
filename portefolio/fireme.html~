@@ -69,9 +69,11 @@
 			<input class="menu-search-field" type="text" name="search" placeholder="Search">
 			<button class="menu-search-button" type="submit"></button>
 		</form>
-		
-		<span class="language fr"></span>
-		<span class="language engl"></span>
+		<div class="menu-footer">
+		<div class="wrapper-lang"> 
+			<span class="language fr"></span>
+			<span class="language engl"></span>
+		</div>
 		
 	</div>
 	<div class="menu-emplacement">
