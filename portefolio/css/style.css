@@ -34,6 +34,16 @@ body {
     left: 20px; }
   body .engl {
     display: none; }
+  body .language {
+    background: url("../img/icon-vache-lan.png");
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-repeat: no-repeat; }
+    body .language.fr {
+      background-position: 0 -80px; }
+    body .language.engl {
+      background-position: 0 -0; }
   body .menu-emplacement {
     position: fixed;
     top: 20px;
