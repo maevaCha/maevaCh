@@ -21,13 +21,13 @@ height: 1500px;
 		@include position-fixed("20px", "20px", false, false);
 		height: 88px;
 		width: 88px;
-		@include animation-css("width", "1s");
+		@include animation-css("width", "0.8s");
 		z-index: 1;
 
 		&:hover {
  			cursor: pointer;
 			width: 288px;
-			@include animation-css("width", "1s");
+			@include animation-css("width", "0.8s");
 		
 		}
     	.menu-icon {
@@ -37,114 +37,81 @@ height: 1500px;
 			display:block;
 			background: url('../img/icon-vache-menu.png');
 			background-repeat: no-repeat;
-			@include animation-css("transform", "1s");
-			
-
 		}
 		.arrow.menu {
-			@include position-absolute("14px","10px", false, false,"8");
+			@include position-absolute("14px","50px", false, false,"8");
 	     	content: '';
 			width: 0;
 			height: 0;
-			border-left: 28px solid $color-brown;
+			border-right: 28px solid $color-brown;
 			border-bottom: 30px solid transparent;
 			border-top: 30px solid transparent;
-			@include animation-css("transform", "1s");
+			@include animation-css("transform", "0.8s");
 				
 		}
 		.text-wrapper {
 			width: 0px;
 			height: 88px;
 			overflow:hidden;
-			@include animation-css("width", "1s");
-			@include position-fixed("20px", "20px", false, false);
+			@include animation-css("width", "0.8s");
+			@include position-fixed("20px", "40px", false, false);
 		}
 		.text-menu {
-			@include position-absolute("0px","300px", false, false,"6");
+			@include position-absolute("-35px","-10px", false, false,"6");
 			width: 180px;
-			@include animation-css("transform", "1s");
+			@include animation-css("transform", "0.8s");
 			.text-principal {
-				color: $color-blue;
-				font-family: 'leaguegothic-condensed', sans-serif;
-				font-weight: bold; 
-				font-size: 16px;
-			}
-			.text-soustitre {
-				font-size: 12px;
 				color: $color-brown;
+				font-family: 'Ranchers', cursive;
+				font-weight: 800; 
+				font-size: 50px;
 			}
 		}
-		.background-effect-circle {
-			@include raduis-button("88px","88px");
-			@include position-absolute("0","0", false, false,"0");
-			background: $color-grey;
-			@include animation-css("transform", "1s");	
-		}
-		.background-effect-rectangle {
-			@include position-absolute("0px","37px", false, false,"-1");
-			background: $color-grey;
-			height: 88px;
-			width: 0px;
-			text-align: right;
-			@include animation-css("width", "1s");
-		}
+
 		.round-circle {
 			@include raduis-button("88px","88px");
 			@include position-absolute("0","0", false, false,"9");
 			background: $color-brown;
-			@include animation-css("transform", "1s");
 		}
 		&:hover .menu-icon {
 			background-position:0 -81px;
-			transform: translate(-200px,0px);
-			@include animation-css("transform", "1s");		  
 		}
 
 		&:hover .arrow.menu {
-			@include animation-css("transform", "1s");
-			transform: translate(-175px,0px);
+			@include animation-css("transform", "0.8s");
+			transform: translate(-26px,0px);
 
 		}
 		&:hover .text-wrapper {
-			width: 243px;
-			@include animation-css("width", "1s");
+			width: 300px;
+			@include animation-css("width", "0.8s");
 		}
 		&:hover .text-menu {
-			@include animation-css("transform", "1s");
-			transform: translate(300px,0px);
+			@include animation-css("transform", "0.8s");
+			transform: translate(-110px,0px);
 		}
 		&:hover .round-circle {
 			@include animation-css("transform", "1s");
-			transform: translate(-200px,0px);
 
 		}
-		&:hover .background-effect-rectangle {
-			@include animation-css("width", "1s");
-			width: 200px;
-			
-		}
+		
 	}
 	.active.menu-emplacement {
 		.menu-icon {
-			background-position:0 -161px;
-			transform: translate(0px,0px);
-			@include animation-css("transform", "0.5s");		
+			background-position:0 -160px;	
 		}
 		.arrow.menu {
-			@include animation-css("transform", "0.5s");
+			@include animation-css("transform", "0.8s");
 			transform: translate(0px,0px);
 		}
 		.round-circle {
-			@include animation-css("transform", "0.5s");
-			transform: translate(0px,0px);
+			@include animation-css("background", "1s");
+			background: $color-white;
 		}
-		.background-effect-rectangle {
-			@include animation-css("width", "0.5s");
-			width:0px;	
-		}
+	
 		.text-wrapper {
 			width: 0px;
-			@include animation-css("width", "0.5s");
+			@include animation-css("width", "0.8s");
 		}
 	}
 	.overlay.menu {
@@ -153,18 +120,22 @@ height: 1500px;
 		@include position-fixed("0px", "0px",false,false);
 		height: 100%;
 		width: 35%;
-		z-index: -1;
+		z-index: 0;
 		display:none;
 		.overlay-content {
 			margin-top: 160px;
 			a {
-				display: block;	
+				display: inine-block;	
 				text-decoration: none;
 				color: $color-white;
 				font-family: 'Ranchers', cursive;
 				font-weight: 800; 
 				font-size: 60px;
-				line-height:0.95;	
+				line-height:0.95;
+				cursor: pointer;
+				&:hover {
+					color:$color-blue;
+				}	
 			}
 		}
 	}
