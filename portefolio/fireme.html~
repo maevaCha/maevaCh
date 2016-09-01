@@ -42,7 +42,7 @@
 				<a class="overlay-link me">MEUHOI</a>
 			</li>
 			<li>
-				<a class="overlay-link skill">COMPES</a>	
+				<a class="overlay-link skill">COMPETENCES</a>	
 			</li>
 			<li>
 				<a class="overlay-link work">CLIENTS</a>
@@ -62,7 +62,7 @@
 				<a class="overlay-link work">WORKS</a>
 			</li>
 			<li>	
-				<a class="overlay-link contact">COWTACT</a>
+				<a class="overlay-link contact">CONTACT</a>
 			</li>				
 		</ul>
 		<form class="menu-search" method="get" action="/search">
@@ -70,9 +70,10 @@
 			<button class="menu-search-button" type="submit"></button>
 		</form>
 		<div class="menu-footer">
-		<div class="wrapper-lang"> 
-			<span class="language fr"></span>
-			<span class="language engl"></span>
+			<div class="wrapper-lang"> 
+				<span class="language fr"></span>
+				<span class="language engl"></span>
+			</div>
 		</div>
 		
 	</div>
