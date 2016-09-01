@@ -17,6 +17,9 @@ height: 1500px;
         color: red;
 	@include position-fixed("20px", false, false, "20px");
     }
+	.engl {
+		display: none;
+	}
     .menu-emplacement {
 		@include position-fixed("20px", "20px", false, false);
 		height: 88px;
@@ -123,9 +126,13 @@ height: 1500px;
 		z-index: 0;
 		display:none;
 		.overlay-content {
-			margin-top: 160px;
+			margin: 160px auto 20px;
+			width: 80%;
+			padding: 0;
+			list-style-type:none;
+	
 			a {
-				display: inine-block;	
+				display: inline-block;	
 				text-decoration: none;
 				color: $color-white;
 				font-family: 'Ranchers', cursive;
@@ -135,8 +142,35 @@ height: 1500px;
 				cursor: pointer;
 				&:hover {
 					color:$color-blue;
-				}	
+				}
+				&.active {
+					@include animation-css("transform", "0.8s");
+					transform: translate(-60%,0px);
+					text-align: center;
+					color:$color-blue;
+				}
 			}
+		}
+		.menu-search{
+			width: 80%;
+			position: relative;
+			margin: 60px auto 0;		
+		}
+		.menu-search-field {
+			background: none;
+			display: block;	
+			color: $color-white;
+			width: 100%;
+			border-width: 0 0 1px 0;
+			border-style: none none solid none;
+			border-color: rgba(255,255,255,.5);
+		}
+		.menu-search-button {
+			position: absolute;
+		 	right: 0;
+    		top: 0;
+			border:0;
+			background: none;
 		}
 	}
 }

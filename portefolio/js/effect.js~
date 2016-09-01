@@ -10,7 +10,15 @@ $(document).ready(function(){
 		link.click(function() {
 			link.removeClass('active');
 			$(this).addClass('active');
+		
 		});
 	}
+	var langChoose = function(link) {
+		link.click(function() {
+			$('.fr').hide();
+			$('.engl').show();
+		});
+	}
+	langChoose($('.language'));
 	menuClick($('.menu-emplacement'),$('.overlay-link'));
 });

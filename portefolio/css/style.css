@@ -32,6 +32,8 @@ body {
     position: fixed;
     top: 20px;
     left: 20px; }
+  body .engl {
+    display: none; }
   body .menu-emplacement {
     position: fixed;
     top: 20px;
@@ -166,9 +168,12 @@ body {
     z-index: 0;
     display: none; }
     body .overlay.menu .overlay-content {
-      margin-top: 160px; }
+      margin: 160px auto 20px;
+      width: 80%;
+      padding: 0;
+      list-style-type: none; }
       body .overlay.menu .overlay-content a {
-        display: inine-block;
+        display: inline-block;
         text-decoration: none;
         color: #fff;
         font-family: 'Ranchers', cursive;
@@ -178,5 +183,31 @@ body {
         cursor: pointer; }
         body .overlay.menu .overlay-content a:hover {
           color: #22afcd; }
+        body .overlay.menu .overlay-content a.active {
+          -webkit-transition: transform 0.8s;
+          -moz-transition: transform 0.8s;
+          -o-transition: transform 0.8s;
+          transition: transform 0.8s;
+          transform: translate(-60%, 0px);
+          text-align: center;
+          color: #22afcd; }
+    body .overlay.menu .menu-search {
+      width: 80%;
+      position: relative;
+      margin: 60px auto 0; }
+    body .overlay.menu .menu-search-field {
+      background: none;
+      display: block;
+      color: #fff;
+      width: 100%;
+      border-width: 0 0 1px 0;
+      border-style: none none solid none;
+      border-color: rgba(255, 255, 255, 0.5); }
+    body .overlay.menu .menu-search-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 0;
+      background: none; }
 
 /*# sourceMappingURL=style.css.map */

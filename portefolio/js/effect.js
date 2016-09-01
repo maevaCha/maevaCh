@@ -13,5 +13,12 @@ $(document).ready(function(){
 		
 		});
 	}
+	var langChoose = function(link) {
+		link.click(function() {
+			$('.fr').hide();
+			$('.engl').show();
+		});
+	}
+	langChoose($('.language'));
 	menuClick($('.menu-emplacement'),$('.overlay-link'));
 });
