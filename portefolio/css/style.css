@@ -34,10 +34,22 @@ body {
     position: fixed;
     top: 20px;
     left: 20px; }
+  body .round-circle-footer {
+    height: 88px;
+    width: 88px;
+    background: #fff;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: inline-block; }
+  body .round-circle-footer + .round-circle-footer {
+    margin-left: 5%; }
   body .wrapper-lang {
     height: 80px;
     width: 80px;
-    overflow: hidden; }
+    overflow: hidden;
+    display: inline-block;
+    margin: 4px; }
     body .wrapper-lang .language {
       background: url("../img/icon-vache-lan.png");
       width: 80px;
@@ -49,6 +61,14 @@ body {
       body .wrapper-lang .language.engl {
         background-position: 0 -0; }
     body .wrapper-lang:hover {
+      cursor: pointer; }
+  body .myope {
+    background: url("../img/icon-vache-myope.png");
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    margin: 4px; }
+    body .myope:hover {
       cursor: pointer; }
   body .menu-emplacement {
     position: fixed;
@@ -184,6 +204,10 @@ body {
     padding: 60px;
     z-index: 0;
     display: none; }
+    body .overlay.menu.one {
+      overflow: hidden; }
+    body .overlay.menu.duplicate a.active {
+      color: #681313 !important; }
     body .overlay.menu .overlay-content {
       margin: 60px auto 20px;
       width: 100%;
@@ -205,12 +229,12 @@ body {
           -moz-transition: transform 0.8s;
           -o-transition: transform 0.8s;
           transition: transform 0.8s;
-          transform: translate(-60%, 0px);
+          transform: translate(-80%, 0px);
           text-align: center;
-          color: #22afcd; }
+          color: #fff; }
     body .overlay.menu .menu-footer {
       width: 100%;
-      margin: 0 auto; }
+      white-space: nowrap; }
     body .overlay.menu .menu-search {
       width: 100%;
       position: relative;

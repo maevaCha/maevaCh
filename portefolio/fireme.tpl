@@ -36,37 +36,7 @@
 	<div class="name">
 		maeva 
 	</div>
-	<div class="overlay menu duplicate">
-		<ul class="overlay-content fr">
-			<li>
-				<a class="overlay-link" data-title="me">MEUHOI</a>
-			</li>
-			<li>
-				<a class="overlay-link" data-title="skill">COMPETENCES</a>	
-			</li>
-			<li>
-				<a class="overlay-link" data-title="work">CLIENTS</a>
-			</li>
-			<li>	
-				<a class="overlay-link" data-title="contact">CONTACT</a>
-			</li>			
-		</ul>
-		<ul class="overlay-content engl">
-			<li>
-				<a class="overlay-link" data-title="me">MOOE</a>
-			</li>
-			<li>
-				<a class="overlay-link skill" data-title="skill">SKILLS</a>	
-			</li> 
-			<li>
-				<a class="overlay-link" data-title="work">WORKS</a>
-			</li>
-			<li>	
-				<a class="overlay-link" data-title="contact">CONTACT</a>
-			</li>				
-		</ul>
-	</div>
-	<div class="overlay menu one">
+	<div class="overlay menu">
 		<ul class="overlay-content fr">
 			<li>
 				<a class="overlay-link" data-title="me">MEUHOI</a>
@@ -100,16 +70,10 @@
 			<button class="menu-search-button" type="submit"></button>
 		</form>
 		<div class="menu-footer">
-			<span class="round-circle-footer">
-				<div class="wrapper-lang"> 
-					<span class="language fr"></span>
-					<span class="language engl"></span>
-				</div>
-			</span>
-			<span class="round-circle-footer">
-				<span class="myope"></span>
-			</span>
-	
+			<div class="wrapper-lang"> 
+				<span class="language fr"></span>
+				<span class="language engl"></span>
+			</div>
 		</div>
 		
 	</div>

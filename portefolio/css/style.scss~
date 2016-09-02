@@ -19,10 +19,23 @@ height: 1500px;
         color: red;
 	@include position-fixed("20px", false, false, "20px");
     }
+	
+	.round-circle-footer {
+		height: 88px;
+		width: 88px;
+		background: $color-white;
+		@include raduis-button("88px","88px");
+		display:inline-block;
+	}
+	.round-circle-footer + .round-circle-footer{
+		margin-left: 5%;
+	}		
 	.wrapper-lang {	
 		height: 80px;
 		width: 80px;
 		overflow: hidden;
+		display:inline-block;
+		margin: 4px;
 		.language {
 			background: url('../img/icon-vache-lan.png');
 			width:80px;
@@ -36,9 +49,19 @@ height: 1500px;
 				background-position:0 -0;	
 			}
 		}
-	&:hover {
-		cursor: pointer;
+		&:hover {
+			cursor: pointer;
+		}
 	}
+	.myope {
+		background: url('../img/icon-vache-myope.png');
+		height: 80px;
+		width: 80px;
+		display:inline-block;
+		margin: 4px;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 	
     .menu-emplacement {
@@ -147,6 +170,12 @@ height: 1500px;
 		padding: 60px;
 		z-index: 0;
 		display:none;
+		&.one {
+			overflow: hidden;
+		}
+		&.duplicate a.active{
+			color: $color-brown !important;
+		}
 		.overlay-content {
 			margin: 60px auto 20px;
 			width: 100%;
@@ -167,15 +196,16 @@ height: 1500px;
 				}
 				&.active {
 					@include animation-css("transform", "0.8s");
-					transform: translate(-60%,0px);
+					transform: translate(-80%,0px);
 					text-align: center;
-					color:$color-blue;
+					color:$color-white;
 				}
 			}
 		}
 		.menu-footer {
 			width: 100%;
-			margin: 0 auto;
+			white-space: nowrap;
+		
 		}
 		.menu-search{
 			width: 100%;

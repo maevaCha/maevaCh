@@ -1,21 +1,39 @@
-{
-	"search": [
-	{
-		"word":"design",
-		"url":"",
-	},
-	{
-		"word":"web",
-		"url":"",
-	},
-	{
-		"word":"javascript",
-		"url":"",
-	},
-	{
-		"word":"html",
-		"url":"",
-	}
-]}
-
-
+jsonMenuCall ({
+		"menuFr": [
+		    {
+		        "title": "MEUHOI",
+		        "href": "http://www.scriptol.fr/cms/dynamic-menu.json"
+		    },
+		    {
+		        "title": "COMPETENCES",
+		        "href": "http://www.scriptol.fr/cms/construire-un-cms.php"
+		    },
+		    {
+		        "title": "CLIENTS",
+		        "href": "http://www.scriptol.fr/cms/demo-editeur.php"
+		    },
+		    {
+		        "title": "CONTACT",
+		        "href": "http://www.scriptol.fr/cms/demo-editeur.php"
+		    }
+		],
+		 "menuAngl": [
+		    {
+		        "title": "MOOE",
+		        "href": "http://www.scriptol.fr/cms/dynamic-menu.json"
+		    },
+		    {
+		        "title": "SKILLS",
+		        "href": "http://www.scriptol.fr/cms/construire-un-cms.php"
+		    },
+		    {
+		        "title": "WORK",
+		        "href": "http://www.scriptol.fr/cms/demo-editeur.php"
+		    },
+		    {
+		        "title": "CONTACT",
+		        "href": "http://www.scriptol.fr/cms/demo-editeur.php"
+		    }
+    	]
+})
+	

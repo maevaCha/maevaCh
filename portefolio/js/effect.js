@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//click on menu
+
 	var menuClick = function(id,link) {
 		id.click(function() {
 			//click to see menu add class
