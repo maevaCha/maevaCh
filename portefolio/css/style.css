@@ -48,6 +48,8 @@ body {
         background-position: 0 -80px; }
       body .wrapper-lang .language.engl {
         background-position: 0 -0; }
+    body .wrapper-lang:hover {
+      cursor: pointer; }
   body .menu-emplacement {
     position: fixed;
     top: 20px;
@@ -178,12 +180,13 @@ body {
     top: 0px;
     right: 0px;
     height: 100%;
-    width: 35%;
+    width: 400px;
+    padding: 60px;
     z-index: 0;
     display: none; }
     body .overlay.menu .overlay-content {
-      margin: 160px auto 20px;
-      width: 80%;
+      margin: 60px auto 20px;
+      width: 100%;
       padding: 0;
       list-style-type: none; }
       body .overlay.menu .overlay-content a {
@@ -206,10 +209,10 @@ body {
           text-align: center;
           color: #22afcd; }
     body .overlay.menu .menu-footer {
-      width: 80%;
+      width: 100%;
       margin: 0 auto; }
     body .overlay.menu .menu-search {
-      width: 80%;
+      width: 100%;
       position: relative;
       margin: 60px auto 60px; }
     body .overlay.menu .menu-search-field {

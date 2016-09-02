@@ -8,8 +8,16 @@ $(document).ready(function(){
 			
 		});
 		link.click(function() {
+			//click to see menu add class
 			link.removeClass('active');
-			$(this).addClass('active');
+			var selectLink = $(this).data('title');
+			link.each(function() {
+				if($(this).data('title') === selectLink) {
+					$(this).addClass('active');
+				}
+				
+			});
+    
 		
 		});
 	}

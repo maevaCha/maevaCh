@@ -36,6 +36,9 @@ height: 1500px;
 				background-position:0 -0;	
 			}
 		}
+	&:hover {
+		cursor: pointer;
+	}
 	}
 	
     .menu-emplacement {
@@ -140,12 +143,13 @@ height: 1500px;
 		opacity:0.95;
 		@include position-fixed("0px", "0px",false,false);
 		height: 100%;
-		width: 35%;
+		width: 400px;
+		padding: 60px;
 		z-index: 0;
 		display:none;
 		.overlay-content {
-			margin: 160px auto 20px;
-			width: 80%;
+			margin: 60px auto 20px;
+			width: 100%;
 			padding: 0;
 			list-style-type:none;
 		
@@ -170,11 +174,11 @@ height: 1500px;
 			}
 		}
 		.menu-footer {
-			width: 80%;
+			width: 100%;
 			margin: 0 auto;
 		}
 		.menu-search{
-			width: 80%;
+			width: 100%;
 			position: relative;
 			margin: 60px auto 60px;		
 		}
