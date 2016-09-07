@@ -206,8 +206,10 @@ body {
     display: none; }
     body .overlay.menu.one {
       overflow: hidden; }
-    body .overlay.menu.duplicate a.active {
+    body .overlay.menu.duplicate a {
       color: #681313 !important; }
+      body .overlay.menu.duplicate a.active {
+        color: #681313 !important; }
     body .overlay.menu .overlay-content {
       margin: 60px auto 20px;
       width: 100%;
@@ -221,7 +223,11 @@ body {
         font-weight: 800;
         font-size: 60px;
         line-height: 0.95;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-transition: transform 0.6s;
+        -moz-transition: transform 0.6s;
+        -o-transition: transform 0.6s;
+        transition: transform 0.6s; }
         body .overlay.menu .overlay-content a:hover {
           color: #22afcd; }
         body .overlay.menu .overlay-content a.active {
@@ -253,5 +259,13 @@ body {
       top: 0;
       border: 0;
       background: none; }
+  body #about {
+    width: 100%; }
+    body #about .img {
+      width: 50%;
+      display: inline-block; }
+    body #about .description {
+      width: 50%;
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

@@ -36,6 +36,14 @@
 	<div class="name">
 		maeva 
 	</div>
+<div id="about">	
+	<div class="img-about">
+		<img src="img/maevach.jpg">	
+	</div>
+	<div class="description">
+		<p> lore zejrio ezrzeporipo ieroz roze rize porizepori zepori </p>
+	</div>
+</div>	
 	<div class="overlay menu duplicate">
 		<ul class="overlay-content fr">
 			<li>
@@ -51,7 +59,7 @@
 				<a class="overlay-link" data-title="contact">CONTACT</a>
 			</li>			
 		</ul>
-			<ul class="overlay-content engl">
+		<ul class="overlay-content engl">
 			<li>
 				<a class="overlay-link" data-title="me">MOOE</a>
 			</li>
