@@ -282,18 +282,19 @@ height: 1500px;
 		font-size: 0;
 		width: 100%;
 		.img {
-			width: 50%;
+			width: calc(100% - 520px);
 			display: inline-block;
 			vertical-align: middle;
 			position: relative;
 			height: 100%;
 			img {
-				width: 80%;
+				width: 65%;
 				margin: 0 auto;
 				display: block;
 				position: absolute;
 				top: 50%;
-				transform: translateY(-50%);
+				left: 50%;
+				transform: translate(-50%, -50%);
 			}
 		}
 		.description {
@@ -304,7 +305,7 @@ height: 1500px;
 				color: $color-blue;
 				margin-bottom: 40px;
 			}
-			width: 50%;
+			width: 520px;;
 			vertical-align: middle;
 			display: inline-block;
 			p {

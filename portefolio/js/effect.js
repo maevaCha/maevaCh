@@ -19,6 +19,7 @@ $(document).ready(function(){
 
 			//to scroll on the good content
 			    $('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
+
 			
 		});
 
