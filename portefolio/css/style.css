@@ -22,9 +22,6 @@
   font-family: leaguegothic-condensed;
   src: url("font/leaguegothic-condensed-regular-webfont.eot");
   src: url("font/leaguegothic-condensed-regular-webfont.woff") format("woff"), url("font/leaguegothic-condensed-regular-webfont.ttf") format("truetype"), url("font/leaguegothic-condensed-regular-webfont.svg") format("svg"); }
-/* ==================================================
-    Page d'acceuil    
-================================================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,6 +65,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* ==================================================
+    Page d'acceuil    
+================================================== */
 body {
   height: 1500px; }
   body .engl {
@@ -169,7 +169,7 @@ body {
       right: 40px; }
     body .menu-emplacement .text-menu {
       position: absolute;
-      top: -35px;
+      top: 23px;
       right: -10px;
       z-index: 6;
       width: 180px;
@@ -303,12 +303,32 @@ body {
       border: 0;
       background: none; }
   body #about {
+    font-size: 0;
     width: 100%; }
     body #about .img {
       width: 50%;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      height: 100%; }
+      body #about .img img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
     body #about .description {
       width: 50%;
+      vertical-align: middle;
       display: inline-block; }
+      body #about .description h2 {
+        font-family: 'Ranchers', cursive;
+        font-weight: 800;
+        font-size: 45px;
+        color: #22afcd;
+        margin-bottom: 40px; }
+      body #about .description p {
+        font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,29 @@
 $(document).ready(function(){
-
+	//height AboutMe
+	var heightWindow = function() {
+		var sizeHeight= $(window).height();
+		$("#about").height(sizeHeight);
+	}
+	
 	var menuClick = function(id,link) {
-		id.click(function() {
+		id.click(function(event) {
+			event.preventDefault();
+			//scroll menu
+			var idScroll = $(this).attr('href');
+
 			//click to see menu add class
 			$(this).toggleClass('active');
+
+	
     		$('.overlay').animate({width: 'toggle'}, 500);
+
+			//to scroll on the good content
+			    $('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
 			
 		});
+
 		link.click(function() {
+		
 			//click to see menu add class
 			link.removeClass('active');
 			var selectLink = $(this).data('title');
@@ -34,4 +50,9 @@ $(document).ready(function(){
 	}
 	langChoose($('.language'));
 	menuClick($('.menu-emplacement'),$('.overlay-link'));
+	heightWindow();
+
+	$( window ).resize(function() {
+		heightWindow();
+	});
 });

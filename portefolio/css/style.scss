@@ -6,10 +6,6 @@
 
 
 
-
-/* ==================================================
-    Page d'acceuil    
-================================================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +50,9 @@ table {
 	border-spacing: 0;
 }
 
+/* ==================================================
+    Page d'acceuil    
+================================================== */
 
 
 body {
@@ -150,7 +149,7 @@ height: 1500px;
 			@include position-fixed("20px", "40px", false, false);
 		}
 		.text-menu {
-			@include position-absolute("-35px","-10px", false, false,"6");
+			@include position-absolute("23px","-10px", false, false,"6");
 			width: 180px;
 			@include animation-css("transform", "0.8s");
 			.text-principal {
@@ -280,14 +279,37 @@ height: 1500px;
 		}
 	}
 	#about {
+		font-size: 0;
 		width: 100%;
 		.img {
 			width: 50%;
 			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			height: 100%;
+			img {
+				width: 80%;
+				margin: 0 auto;
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
 		.description {
+			h2 {
+				font-family: 'Ranchers', cursive;
+				font-weight: 800;
+				font-size: 45px;
+				color: $color-blue;
+				margin-bottom: 40px;
+			}
 			width: 50%;
+			vertical-align: middle;
 			display: inline-block;
+			p {
+				font-size: 12px;
+			}
 		}
 	}
 }
