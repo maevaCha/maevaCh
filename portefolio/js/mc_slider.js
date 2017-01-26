@@ -1,5 +1,6 @@
 (function($){
 
+
     var position;
     var currentPosition;
 $.fn.swipe = function( callback ) {
