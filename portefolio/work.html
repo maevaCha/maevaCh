@@ -1,0 +1,89 @@
+ <!-- JAVASCRIPT -->
+ <script type="text/javascript" src="js/mc_slider.js"></script>
+ <!-- CSS -->
+<link type="text/css" rel="stylesheet" href="css/slider.css" />
+
+<div class="slider-module" tabindex="1">
+ <div class="wrapper">
+   <div class="direction arrow previous">
+        <a href="javascript:void(0);">+</a>
+    </div>
+    <div class="slider">
+      <div class="item" id="1">
+        <div class="item-info-container">
+                <div class="item-info">
+                    <div class="item-info-entete">
+                        <h1>Les Grands</h1>
+                         <p>Saison 1 inédite</p>
+                    </div>
+                    <p class="item-info-description">
+                        La série française attendue sur nos écrans. Un distributeur de préservatif fait son entrée au collège. Selon
+                        les statisques, un quart des élèves l'utilisera.
+                    </p>
+                </div>
+            </div>
+            <div class="item-image-container">
+                <img src="./img/maevach.jpg" />
+             </div>
+      </div>
+      <div class="item" id="2">
+            <div class="item-info-container">
+                <div class="item-info">
+                    <div class="item-info-entete">
+                        <h1>Les Grands</h1>
+                         <p>Saison 1 inédite</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-image-container">
+                <img src="./img/maevach.jpg" />
+             </div>
+      </div>
+      <div class="item" id="3">
+            <div class="item-info-container">
+                <div class="item-info">
+                    <div class="item-info-entete">
+                        <h1>Les Grands</h1>
+                         <p>Saison 1 inédite</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-image-container">
+                <img src="./img/maevach.jpg"/>
+             </div>
+      </div>
+        <div class="item" id="4">
+            <div class="item-info-container">
+                <div class="item-info">
+                    <div class="item-info-entete">
+                        <h1>Les Grands</h1>
+                         <p>Saison 1 inédite</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-image-container">
+                <img src="./img/maevach.jpg"/>
+             </div>
+      </div>
+    </div>
+     <div class="direction arrow next">
+        <a href="javascript:void(0);">+</a>
+    </div>
+    </div>
+  </div>
+
+<script>
+    $(document).ready(function() {
+
+        $('.slider-module').oMediaCarousel(
+                {
+                    speed: 3000,
+                    autoSlide: true,
+                    pauseOnHover: true,
+                    setBullet: true,
+                    setInfinite: true
+                }
+        );
+    });
+</script>
+

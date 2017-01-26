@@ -1,0 +1,102 @@
+/* ==================================================
+    IMPORT      
+================================================== */
+/* ==================================================
+    COLORS  
+================================================== */
+/* ==================================================
+    round button 
+================================================== */
+/* ==================================================
+    animation delay 
+================================================== */
+@font-face {
+  font-family: leaguegothic;
+  src: url("font/leaguegothic-regular-webfont.eot");
+  src: url("font/leaguegothic-regular-webfont.woff") format("woff"), url("font/leaguegothic-regular-webfont.ttf") format("truetype"), url("font/leaguegothic-regular-webfont.svg") format("svg"); }
+@font-face {
+  font-family: leaguegothic-italic;
+  src: url("font/leaguegothic-italic-webfont.eot");
+  src: url("font/leaguegothic-italic-webfont.woff") format("woff"), url("font/leaguegothic-italic-webfont.ttf") format("truetype"), url("font/leaguegothic-italic-webfont.svg") format("svg"); }
+@font-face {
+  font-family: leaguegothic-condensed;
+  src: url("font/leaguegothic-condensed-regular-webfont.eot");
+  src: url("font/leaguegothic-condensed-regular-webfont.woff") format("woff"), url("font/leaguegothic-condensed-regular-webfont.ttf") format("truetype"), url("font/leaguegothic-condensed-regular-webfont.svg") format("svg"); }
+.wrapper {
+  width: 100%;
+  margin: auto;
+  height: 450px;
+  overflow: hidden;
+  position: relative; }
+
+.slider {
+  height: 100%;
+  position: absolute; }
+
+.arrow {
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.direction.next {
+  right: 5px; }
+
+.direction.previous {
+  left: 5px;
+  z-index: 2; }
+
+.direction:hover {
+  cursor: pointer; }
+
+.item-info {
+  padding: 33px 25px 33px 170px;
+  color: #fff; }
+
+.item-info h1 {
+  margin: 0; }
+
+.item-info p {
+  margin: 0; }
+
+.item-info .item-info-description {
+  font-size: 25px;
+  line-height: 1em;
+  margin: 30px 0 10px; }
+
+.item-info-container {
+  float: left;
+  width: 475px;
+  background: #000;
+  height: 100%; }
+
+.item-image-container {
+  float: left;
+  width: calc(100% - 475px);
+  height: 100%; }
+
+.item-image-container img {
+  height: auto;
+  width: 100%; }
+
+.slider-bullet {
+  text-align: center;
+  list-style: none;
+  position: relative; }
+
+.slider-bullet li {
+  background: #000 none repeat scroll 0 0;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  display: inline-block; }
+
+.slider-bullet li.active {
+  background: #ff7900; }
+
+li + li,
+li + li + li {
+  margin-left: 5px; }
+
+/*# sourceMappingURL=slider.css.map */
