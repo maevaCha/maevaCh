@@ -1,84 +1,61 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
- <!-- CSS -->
-<link type="text/css" rel="stylesheet" href="css/slider.css" />
+</head>
 
-<div class="slider-module" tabindex="1">
+<body>
+<div class="slider-module" tabindex ="0">
  <div class="wrapper">
-    <div class="slider">
-      <div class="item" id="1">
-        <div class="item-info-container">
-                <div class="item-info">
-                    <div class="item-info-entete">
-                        <h1>Les Grands</h1>
-                         <p>Saison 1 inédite</p>
-                    </div>
-                    <p class="item-info-description">
-                        La série française attendue sur nos écrans. Un distributeur de préservatif fait son entrée au collège. Selon
-                        les statisques, un quart des élèves l'utilisera.
-                    </p>
-                </div>
-            </div>
+    <div class="slider" tabindex ="0">
+      <div class="item" >
+		<div class="item-image-container">
+			<img src="./img/image1.jpg" />
+		 </div>
+      </div>
+      <div class="item">
             <div class="item-image-container">
-                <img src="./img/maevach.jpg" />
+                <img src="./img/image2.jpeg" />
              </div>
       </div>
-      <div class="item" id="2">
-            <div class="item-info-container">
-                <div class="item-info">
-                    <div class="item-info-entete">
-                        <h1>Les Grands</h1>
-                         <p>Saison 1 inédite</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item-image-container">
-                <img src="./img/maevach.jpg" />
-             </div>
+      <div class="item">
+           
+		<div class="item-image-container">
+			<img src="./img/image3.jpg" />
+		 </div>
       </div>
-      <div class="item" id="3">
-            <div class="item-info-container">
-                <div class="item-info">
-                    <div class="item-info-entete">
-                        <h1>Les Grands</h1>
-                         <p>Saison 1 inédite</p>
-                    </div>
-                </div>
-            </div>
+        <div class="item">
             <div class="item-image-container">
-                <img src="./img/maevach.jpg"/>
-             </div>
-      </div>
-        <div class="item" id="4">
-            <div class="item-info-container">
-                <div class="item-info">
-                    <div class="item-info-entete">
-                        <h1>Les Grands</h1>
-                         <p>Saison 1 inédite</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item-image-container">
-                <img src="./img/maevach.jpg"/>
+                <img src="./img/image4.jpg" />
              </div>
       </div>
     </div>
+    </div>
   </div>
- <!-- JAVASCRIPT -->
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/mc_slider.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
 
-        $('.slider-module').oMediaCarousel(
-                {
-                    speed: 3000,
-                    autoSlide: true,
-                    pauseOnHover: true,
-                    setBullet: true,
-                    setInfinite: true
-                }
-        );
-});
-   
+
+<script>
+	/*$(function(){     
+	    $("body").load("slider-module.html");
+	}); */
 </script>
-
+  <footer>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/mc_slider.js"></script>
+    <script>
+       $('.slider-module').oMediaCarousel(
+         { 
+          speed : 3000,
+          autoSlide : true,
+          pauseOnHover : true,
+          setBullet : true,
+          setInfinite : true, 
+          setArrow : false
+        }
+      );      
+          
+    </script>
+  </footer>
+</body>
+</html>

@@ -65,10 +65,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html,
+.body {
+  width: 100%;
+  height: 100%; }
+
 .wrapper {
   width: 100%;
   margin: auto;
-  height: 450px;
+  background: grey;
+  height: 445px;
   overflow: hidden;
   position: relative; }
 
@@ -93,6 +99,10 @@ table {
 .direction:hover {
   cursor: pointer; }
 
+.item {
+  float: left;
+  height: 100%; }
+
 .item-info {
   padding: 33px 25px 33px 170px;
   color: #fff; }
@@ -111,12 +121,17 @@ table {
 .item-info-container {
   float: left;
   width: 475px;
-  background: #000;
+  background: #681313;
   height: 100%; }
 
 .item-image-container {
   float: left;
   width: calc(100% - 475px);
+  height: 100%; }
+
+.slider-module-2 .item-image-container {
+  float: left;
+  width: 100%;
   height: 100%; }
 
 .item-image-container img {
