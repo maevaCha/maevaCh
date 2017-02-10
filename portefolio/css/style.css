@@ -69,14 +69,12 @@ table {
     Page d'acceuil    
 ================================================== */
 body {
-  background: #eee; }
+  background: #eee;
+  font-family: 'Arimo', sans-serif; }
   body .engl {
     display: none; }
-  body .name {
-    color: red;
-    position: fixed;
-    top: 20px;
-    left: 20px; }
+  body section {
+    margin: 80px; }
   body .round-circle-footer {
     height: 88px;
     width: 88px;
@@ -236,6 +234,15 @@ body {
     -moz-transition: width 0.8s;
     -o-transition: width 0.8s;
     transition: width 0.8s; }
+  body .mask {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.2;
+    display: none; }
   body .overlay.menu {
     background: #681313;
     opacity: 0.95;
@@ -355,9 +362,17 @@ h2 {
         .strip .tile.one .content .info {
           padding: 20px;
           margin: 0; }
+          .strip .tile.one .content .info p {
+            white-space: normal; }
       .strip .tile.one .image img {
         width: auto;
         height: 100%; }
+    .strip .tile.two {
+      width: 50%; }
+      .strip .tile.two.tile.number1 .container {
+        padding: 0 10px 0 0; }
+      .strip .tile.two.tile.number2 .container {
+        padding: 0 0 0 10px; }
     .strip .tile .container {
       overflow: hidden;
       position: relative;
@@ -369,7 +384,7 @@ h2 {
       .strip .tile .image img {
         width: 100%;
         height: auto; }
-      .strip .tile .image .mask {
+      .strip .tile .image .mask-tuile {
         background: transparent;
         background: -moz-radial-gradient(center, ellipse cover, transparent 0%, black 100%);
         background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, transparent), color-stop(100%, black));
@@ -395,10 +410,9 @@ h2 {
         display: inline-block; }
     .strip .tile .content {
       background: #fff;
-      padding: 20px;
       position: relative;
       font-size: 16px;
-      line-height: 1.1em; }
+      line-height: 1.5em; }
       .strip .tile .content.height30 {
         height: 30%; }
       .strip .tile .content.height100 {
@@ -409,25 +423,29 @@ h2 {
         vertical-align: top; }
       .strip .tile .content img {
         position: absolute;
-        top: -35px;
+        top: -50px;
         width: 150px; }
       .strip .tile .content .info {
-        margin-left: 150px; }
+        margin-left: 150px;
+        padding: 10px; }
         .strip .tile .content .info h3 {
           font-weight: bold;
           font-size: 18px;
-          margin-bottom: 15px; }
+          margin-bottom: 5px; }
         .strip .tile .content .info .tag {
           font-weight: bold;
           color: #b5b2b2;
           margin-bottom: 5px; }
+        .strip .tile .content .info .date {
+          margin-bottom: 10px;
+          color: #b5b2b2; }
         .strip .tile .content .info p {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis; }
     .strip .tile:hover {
       cursor: pointer; }
-      .strip .tile:hover .image .mask {
+      .strip .tile:hover .image .mask-tuile {
         opacity: 0.3; }
       .strip .tile:hover .content {
         background: #eee; }

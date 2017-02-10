@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var count = 0;
 	//height AboutMe
 	var heightWindow = function() {
 		var sizeHeight= $(window).height();
@@ -9,6 +10,13 @@ $(document).ready(function(){
 		id.click(function(event) {
 			event.preventDefault();
 			//scroll menu
+			if(count=0){
+				$('.mask').css('display','block');
+				count++;
+			}else {
+				$('.mask').css('display','none');
+				count=0;
+			}
 			var idScroll = $(this).attr('href');
 
 			//click to see menu add class
@@ -19,6 +27,7 @@ $(document).ready(function(){
 
 			//to scroll on the good content
 			    $('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
+
 			
 		});
 

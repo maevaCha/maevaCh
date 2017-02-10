@@ -14,14 +14,13 @@
 
 body {
 background: #eee;
+font-family: 'Arimo', sans-serif;
 	.engl {
 		display: none;
 	}
-    .name {
-        color: red;
-	@include position-fixed("20px", false, false, "20px");
-    }
-	
+	section {
+		margin: 80px;		
+	}
 	.round-circle-footer {
 		height: 88px;
 		width: 88px;
@@ -163,6 +162,14 @@ background: #eee;
 			@include animation-css("width", "0.8s");
 		}
 	}
+	.mask {
+		@include position-fixed("0px", "0px",false,false);
+		height: 100%;
+		width: 100%;
+		background: #000;
+		opacity: 0.2;
+		display:none;
+	}
 	.overlay.menu {
 	    background: $color-brown;
 		opacity:0.95;
@@ -301,6 +308,9 @@ h2 {
 				.info {
 					padding: 20px;	
 					margin: 0;
+					p {
+						white-space: normal;	
+					}
 				}
 				
 			}
@@ -309,6 +319,17 @@ h2 {
 					width:auto;
 					height: 100%;
 				}	
+			}
+		}
+		&.two {
+			width: 50%;	
+			&.tile.number1 .container {
+				padding: 0 10px 0 0;
+
+			}
+			&.tile.number2 .container  {
+				padding: 0 0 0 10px;
+
 			}
 		}
 		.container {
@@ -324,7 +345,7 @@ h2 {
 				width: 100%;
 				height: auto;
 			}
-			.mask {
+			.mask-tuile {
 				background: rgba(0,0,0,0);
 				background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 				background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
@@ -357,10 +378,9 @@ h2 {
 		}
 		.content {
 			background: #fff;
-			padding: 20px;
 			position: relative;
 			font-size: 16px;
-			line-height: 1.1em;
+			line-height: 1.5em;
 			&.height30 {
 				height: 30%;
 			}
@@ -374,15 +394,16 @@ h2 {
 			}
 			img {
 				position: absolute;
-				top: -35px;
+				top: -50px;
 				width: 150px;
 			}
 			.info{
 				margin-left: 150px;
+				padding: 10px;
 				h3 {
 					font-weight: bold;
 					font-size: 18px;
-					margin-bottom: 15px;
+					margin-bottom: 5px;
 					
 				}
 				.tag {
@@ -390,16 +411,21 @@ h2 {
 					color: #b5b2b2;
 					margin-bottom: 5px;
 				}
+				.date {
+					margin-bottom: 10px;
+					color: #b5b2b2;
+				}
 				p {
 					white-space: nowrap;
 					overflow: hidden;
-					text-overflow: ellipsis
+					text-overflow: ellipsis;
+					
 				}
 			}
 		}
 		&:hover {
 			cursor: pointer;
-			.image .mask {
+			.image .mask-tuile {
 				opacity : 0.3;
 			}
 			.content {
